@@ -1,0 +1,70 @@
+:root {
+  --neutral: #010101;
+  --text-grey: #686d76;
+  --orange: #dc5f00;
+  --white: #eeeeee;
+  --light-orange: #b9977d;
+  --blue: #007ddc;
+  --radius: 10px;
+  --light-green: #4c8db6;
+  --dark-blue: #000fdc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*:has(::before, ::after) {
+  box-sizing: border-box;
+}
+img,
+video,
+picture {
+  max-width: 100%;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+input,
+textarea {
+  outline: none;
+}
+button {
+  user-select: none;
+}
+
+body {
+  background-color: var(--neutral);
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.login {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 100dvh;
+  position: relative;
+}
+.line {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--white);
+}
+.login .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100dvh;
+}
